@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Button} from 'semantic-ui-react'
+
 
 export default class Counter extends Component {
   constructor(props) {
@@ -22,7 +24,7 @@ export default class Counter extends Component {
 
         <p>Current count: <strong>{this.state.currentCount}</strong></p>
 
-        <button onClick={this.incrementCounter}>Increment</button>
+        <Button onClick={this.incrementCounter}>Increment</Button>
       </div>
     );
   }

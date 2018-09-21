@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router';
-import { Layout } from './components/Layout';
-import { FetchData } from './components/FetchData';
-import Counter  from './components/Counter';
+import { Layout } from '../../features/Examples/Layout';
+import { FetchData } from '../../features/Examples/FetchData';
+import Counter  from '../../features/Examples/Counter';
 
 export default class App extends Component {
 
