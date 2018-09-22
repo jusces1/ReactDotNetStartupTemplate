@@ -16,3 +16,4 @@ Material Icon Theme,
 Npm Intellisense,
 Path Intellisense,
 Prettier formatter for Visual Studio Code : CTRL + Shift + P,
+ASP.NET core VS Code Extension Pack
