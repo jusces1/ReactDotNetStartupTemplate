@@ -3,9 +3,10 @@ import thunk from 'redux-thunk';
 import { routerReducer, routerMiddleware } from 'react-router-redux';
 import { CounterReducer} from '../../features/Examples/Counter/CounterReducer';
 import { WeatherForecastReducer} from "../../features/Examples/Table/FetchDataReducer";
+import locale from "../../features/Examples/Languages/localeReducer";
 
 export default function configureStore(history, initialState) {
-  const reducers = { counter: CounterReducer, weatherForecasts: WeatherForecastReducer };
+  const reducers = { counter: CounterReducer, weatherForecasts: WeatherForecastReducer, locale };
 
   const middleware = [
     thunk,

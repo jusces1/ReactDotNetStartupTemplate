@@ -1,21 +1,37 @@
 import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
+import {FormattedMessage} from 'react-intl'
 import { actionCreators } from "./CounerAction";
 import {Button} from 'semantic-ui-react'
 
 const Counter = props => (
   <div>
-    <h1>Counter</h1>
-
-    <p>This is a simple example of a React component.</p>
+    <h1>
+      <FormattedMessage id="counter.title" defaultMessage="Skaičiuoklė" />
+    </h1>
 
     <p>
-      Current count: <strong>{props.count}</strong>
+      <FormattedMessage
+        id="counter.paragraph"
+        defaultMessage="React-redux componento pavizdys"
+      />
     </p>
 
-    <Button onClick={props.increment}>Increment</Button>
-    <Button onClick={props.decrement}>Deciriment</Button>
+    <p>
+      <FormattedMessage
+        id="counter.currentCount"
+        defaultMessage="Dabartinis numeris:"
+      />
+      <strong>{props.count}</strong>
+    </p>
+
+    <Button onClick={props.increment}>
+      <FormattedMessage id="counter.incerement" defaultMessage="pridėti" />
+    </Button>
+    <Button onClick={props.decrement}>
+      <FormattedMessage id="counter.decriment" defaultMessage="atimti" />
+    </Button>
   </div>
 );
 
