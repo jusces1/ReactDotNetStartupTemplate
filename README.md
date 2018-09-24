@@ -1,5 +1,6 @@
 # ReactDotNetStartupTemplate
-- Template for react 16 and dotnet core 2.1 startup project with tests:
+
+Template for react 16 and dotnet core 2.1 startup project with tests:
 
 * Atsidarome ClientApp aplankalą terminale 
 * npm i --save
@@ -7,7 +8,7 @@
 * npm test -- --watchAll
 * npm test -- --coverage
 
-- Extenstions vs code :
+Extenstions vs code :
 
 1. Auto RenameTag,
 2. Bracket Pair Colorizer,
@@ -20,7 +21,7 @@
 9. Prettier formatter for Visual Studio Code : CTRL + Shift + P,
 10. ASP.NET core VS Code Extension Pack
 
-- Docs:
+Docs:
 
 1. [React docs](https://reactjs.org/docs/getting-started.html)
 2. [React-redux docs](https://redux.js.org/basics/usagewithreact)
